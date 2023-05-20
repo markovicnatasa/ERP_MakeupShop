@@ -1,0 +1,546 @@
+{
+	"info": {
+		"_postman_id": "e6a47a31-c870-4768-92c9-0d787e3ac96d",
+		"name": "ListaZelja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "GetAllListaZeljaNeulogovanKorisnik",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllListaZeljaUlogovanKupac",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllListaZeljaUlogovanZaposleni",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListaZeljaIDNeulogovaniKorisnik",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListaZeljaByIDKupacCIjaJeToListaZelja",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListaZeljaByIDKupacCijaToNijeListaZelja",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListaZeljaByIDKojiNePostoji",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostListaZeljaNeulogovanKorisnik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 4,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostListaZeljaUlogovanKupac",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 4,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostListaZeljaUlogovanZaposleni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 4,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutListaZeljaNeulogovanKorisnik",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 5,\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 3,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutListaZeljaUlogovanKupacCijaJeListaZelja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 5,\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 3,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutListaZeljaUlogovanKupacCijaNijeListaZelja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 2,\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 3,\r\n  \"korisnikID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutListaZeljaUlogovanZaposleni",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 5,\r\n  \"datumNastanka\": \"2023-04-11\",\r\n  \"kolicinaProizvoda\": 3,\r\n  \"korisnikID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteListaZeljaNeulogovanKorisnik",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteListaZeljaUlogovanKupacCijiJeToID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteListaZeljaUlogovanKupacCijiJeToNijeID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteListaZeljaUlogovanZaposleni",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteListaZeljaIDKojiNePostoji",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZelja/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZelja",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

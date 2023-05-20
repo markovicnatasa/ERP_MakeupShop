@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "b187734f-6a40-4ac3-8d8c-8d881e90983a",
+		"name": "Recenzija",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "GetAllRecenzija-SviMoguDaVide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecenzijaByIDKojiPostoji",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecenzijaByIDKojiNePostoji",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecenzijaNeulogovanKorisnik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecenzijaUlogovanKupac",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecenzijaUlogovanZaposleni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecenzijaNeulogovanKorisnik",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recenzijaID\": 6,\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3,\r\n  \"korisnikDto\": {\r\n    \"korisnikID\": 2,\r\n    \"imePrezime\": \"Sandra Melovic\",\r\n    \"adresa\": \"Balkanska 8\",\r\n    \"username\": \"melovics\",\r\n    \"password\": \"Sandra1\",\r\n    \"kontakt\": \"0656012496\",\r\n    \"grad\": \"Prijepolje\",\r\n    \"email\": \"melovicsandra@gmail.com\"\r\n  },\r\n  \"proizvodDto\": {\r\n    \"proizvodID\": 3,\r\n    \"imeProizvoda\": \"Puder\",\r\n    \"tipProizvoda\": \"Za lice\",\r\n    \"serijskiBroj\": \"87YKR09\",\r\n    \"cena\": 1560,\r\n    \"dostupnost\": false,\r\n    \"kolicinaNaStanju\": 28,\r\n    \"brendID\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecenzijaUlogovanKupacCijaJeRecenzija",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recenzijaID\": 6,\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3,\r\n  \"korisnikDto\": {\r\n    \"korisnikID\": 2,\r\n    \"imePrezime\": \"Sandra Melovic\",\r\n    \"adresa\": \"Balkanska 8\",\r\n    \"username\": \"melovics\",\r\n    \"password\": \"Sandra1\",\r\n    \"kontakt\": \"0656012496\",\r\n    \"grad\": \"Prijepolje\",\r\n    \"email\": \"melovicsandra@gmail.com\"\r\n  },\r\n  \"proizvodDto\": {\r\n    \"proizvodID\": 3,\r\n    \"imeProizvoda\": \"Puder\",\r\n    \"tipProizvoda\": \"Za lice\",\r\n    \"serijskiBroj\": \"87YKR09\",\r\n    \"cena\": 1560,\r\n    \"dostupnost\": false,\r\n    \"kolicinaNaStanju\": 28,\r\n    \"brendID\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecenzijaUlogovanKupacCijaNijeRecenzija",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recenzijaID\": 6,\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 3,\r\n  \"proizvodID\": 3,\r\n  \"korisnikDto\": {\r\n    \"korisnikID\": 3,\r\n    \"imePrezime\": \"Jovana Tanackovic\",\r\n    \"adresa\": \"Rade Koncara 18\",\r\n    \"username\": \"tanackaj\",\r\n    \"password\": \"Jojo246\",\r\n    \"kontakt\": \"0623421976\",\r\n    \"grad\": \"Zrenjanin\",\r\n    \"email\": \"tanackovicjovana1@gmail.com\"\r\n  },\r\n  \"proizvodDto\": {\r\n    \"proizvodID\": 3,\r\n    \"imeProizvoda\": \"Puder\",\r\n    \"tipProizvoda\": \"Za lice\",\r\n    \"serijskiBroj\": \"87YKR09\",\r\n    \"cena\": 1560,\r\n    \"dostupnost\": false,\r\n    \"kolicinaNaStanju\": 28,\r\n    \"brendID\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecenzijaUlogovanZaposleni",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recenzijaID\": 6,\r\n  \"ocena\": 3,\r\n  \"komentar\": \"Ne odgovara mom tipu koze\",\r\n  \"korisnikID\": 2,\r\n  \"proizvodID\": 3,\r\n  \"korisnikDto\": {\r\n    \"korisnikID\": 2,\r\n    \"imePrezime\": \"Sandra Melovic\",\r\n    \"adresa\": \"Balkanska 8\",\r\n    \"username\": \"melovics\",\r\n    \"password\": \"Sandra1\",\r\n    \"kontakt\": \"0656012496\",\r\n    \"grad\": \"Prijepolje\",\r\n    \"email\": \"melovicsandra@gmail.com\"\r\n  },\r\n  \"proizvodDto\": {\r\n    \"proizvodID\": 3,\r\n    \"imeProizvoda\": \"Puder\",\r\n    \"tipProizvoda\": \"Za lice\",\r\n    \"serijskiBroj\": \"87YKR09\",\r\n    \"cena\": 1560,\r\n    \"dostupnost\": false,\r\n    \"kolicinaNaStanju\": 28,\r\n    \"brendID\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/porudzbina",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"porudzbina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecenzijaNeulogovanKorisnik",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecenzijaUlogovanKupacCijaJeRecenzija",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecenzijaIDNePostoji",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/recenzija/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"recenzija",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecenzijaUlogovanZaposleni",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/porudzbina/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"porudzbina",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "7b97587b-764c-4aa2-85f3-3f085c2fc1a8",
+		"name": "Registracija/Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "RegistracijaUspesno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imePrezime\": \"Milica Ilic\",\r\n  \"adresa\": \"Narodnog fronta 10\",\r\n  \"username\": \"milicaaaaa\",\r\n  \"password\": \"Mica123\",\r\n  \"kontakt\": \"0632196421\",\r\n  \"grad\": \"Novi Sad\",\r\n  \"email\": \"milicailic@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistracijaNeuspesnoNijePopunjenoObaveznoPolje",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imePrezime\": \"Milica Maric\",\r\n  \"adresa\": \"Kneza Milosa 8\",\r\n  \"username\": \"marickaaa\",\r\n  \"password\": \"Mica\",\r\n  \"kontakt\": \"0654819321\",\r\n  \"grad\": \"\",\r\n  \"email\": \"milicamaric123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistracijaNeuspesnoPostojiKorisnickoIme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imePrezime\": \"Milica Maric\",\r\n  \"adresa\": \"Kneza Milosa 8\",\r\n  \"username\": \"milicaaaaa\",\r\n  \"password\": \"Mica\",\r\n  \"kontakt\": \"0654819321\",\r\n  \"grad\": \"Beograd\",\r\n  \"email\": \"milicamaric123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginProveraNeuspesno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"natasaa\",\r\n  \"password\": \"Natasa123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginProveraUspesno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"amiksi\",\r\n  \"password\": \"MilaS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

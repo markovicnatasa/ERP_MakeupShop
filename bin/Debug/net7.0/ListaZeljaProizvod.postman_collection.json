@@ -1,0 +1,666 @@
+{
+	"info": {
+		"_postman_id": "868013e7-11f9-4434-86d3-586e9cdb98da",
+		"name": "ListaZeljaProizvod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "GetAllNeulogovanKorisnik",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllLZPUlogovanKupacMozeDaVidiSamoSvoje",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvods/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvods",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllLZPUlogovanZaposleni",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLZPByIDNeulogovanKorisnik",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLZPByIDUlogovanKupacMozeDaVidiSamoSvoje",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLZPByIDUlogovanKupacPokusavaDaVidiTudje",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLZPByIDUlogovanZaposleni",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostLZPNeulogovaniKorisnik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 1,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostLZPUlogovanKupacCijaNijeListaZelja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 3,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostLZPUlogovanKupacCijaJeListaZelja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 2,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostLZPKadNePostojiListaZelja sa datim ID-jem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 4,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostLZPUlogovanZaposleni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaZeljaID\": 1,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLZPNeulogovanKorisnik",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaProID\": 2,\r\n  \"listaZeljaID\": 3,\r\n  \"proizvodID\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLZPUlogovanKupacCijaJeListaZelja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaProID\": 1,\r\n  \"listaZeljaID\": 2,\r\n  \"proizvodID\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLZPUlogovanKupacCijaNijeListaZelja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaProID\": 3,\r\n  \"listaZeljaID\": 3,\r\n  \"proizvodID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLZPNePostojiID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaProID\": 2,\r\n  \"listaZeljaID\": 5,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLZPUlogovanZaposleni",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"listaProID\": 2,\r\n  \"listaZeljaID\": 2,\r\n  \"proizvodID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLZPNeulogovanKorisnik",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLZpUlogovanKupacCijiJeToID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLZPUlogovanKupacCijiJeToNijeID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLZPUlogovanZaposleni",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLZPIDKojiNePostoji",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/listaZeljaProizvod/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"listaZeljaProizvod",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

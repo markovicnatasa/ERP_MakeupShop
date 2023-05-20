@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "41319fd7-b208-4d07-9b9c-917835a078af",
+		"name": "Brend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "GetBrendByIDKojiPostoji",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBrendByIDKojiNePostoji",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBrend-SviMoguDaVide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostBrendNeulogovanKorisnik",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MDc5Nzc1MCwiZXhwIjoxNjgwODA0OTUwLCJpc3MiOiJNYWtldXBTaG9wIn0.JSFhjnyxGtztLYzdtwrTcSrm-XjUDDObpcYvi7Sd_rg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeBrenda\": \"Golden rose\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostBrendUlogovanKupac",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeBrenda\": \"Golden rose\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostBrendUlogovanZaposleni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeBrenda\": \"Golden rose\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutBrendNeulogovanKorisnik",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MDc5Nzc1MCwiZXhwIjoxNjgwODA0OTUwLCJpc3MiOiJNYWtldXBTaG9wIn0.JSFhjnyxGtztLYzdtwrTcSrm-XjUDDObpcYvi7Sd_rg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brendID\": 6,\r\n  \"imeBrenda\": \"Aura\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutBrendUlogovanKupac",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brendID\": 7,\r\n  \"imeBrenda\": \"Aura\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutBrendUlogovanZaposleni",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brendID\": 6,\r\n  \"imeBrenda\": \"Aura\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/brend",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBrendNeulogovanKorisnik",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBrendUlogovanKupac",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBrendUlogovanZaposleni",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBrendKojiNePostoji",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/brend/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"brend",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

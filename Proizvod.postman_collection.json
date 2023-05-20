@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "9be1950b-1ae0-4aae-8144-923f05b6a874",
+		"name": "Proizvod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25911274"
+	},
+	"item": [
+		{
+			"name": "GetAllProizvod-SviMoguDaVide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProizvodByIDKojiPostoji",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProizvodByIDKojiNePostoji",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProizvodNeulogovanKorisnik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 20,\r\n  \"brendID\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProizvodUlogovanKupac",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 20,\r\n  \"brendID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProizvodUlogovanZaposleni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 20,\r\n  \"brendID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutProizvodNeulogovanKorisnik",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proizvodID\":6,\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 20,\r\n  \"brendID\": 3,\r\n  \"brendDto\": {\r\n    \"brendID\": 3,\r\n    \"imeBrenda\": \"Essence\"\r\n  }\r\n}\r\n\r\n\r\n  \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutProizvodUlogovanKupac",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proizvodID\":6,\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 20,\r\n  \"brendID\": 3,\r\n  \"brendDto\": {\r\n    \"brendID\": 3,\r\n    \"imeBrenda\": \"Essence\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutProizovdUlogovanZaposleni",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proizvodID\":6,\r\n  \"imeProizvoda\": \"Labelo\",\r\n  \"tipProizvoda\": \"Za usne\",\r\n  \"serijskiBroj\": \"AL24BQ1\",\r\n  \"cena\": 350,\r\n  \"dostupnost\": true,\r\n  \"kolicinaNaStanju\": 10,\r\n  \"brendID\": 3,\r\n  \"brendDto\": {\r\n    \"brendID\": 3,\r\n    \"imeBrenda\": \"Essence\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProizvodNeulogovanKorisnik",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProizvodUlogovanKupac",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ikt1cGFjIiwibmJmIjoxNjgxMTI1ODA4LCJleHAiOjE2ODE1NTc4MDgsImlzcyI6Ik1ha2V1cFNob3AifQ.aMm2zSnAGqgVE1AtTDIhfUISCcp7MsYWNrsIFolCtfA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProizvodIDNePostoji",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProizvodUlogovanZaposleni",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrb3Jpc25pa0lEIjoiNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlphcG9zbGVuaSIsIm5iZiI6MTY4MTEyNTk0OCwiZXhwIjoxNjgxNTU3OTQ4LCJpc3MiOiJNYWtldXBTaG9wIn0.x4iFs_q9Fb5AukqWJ-LuzKGFA51D1ONe5igbmIbW-MM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7021/api/proizvod/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7021",
+					"path": [
+						"api",
+						"proizvod",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
