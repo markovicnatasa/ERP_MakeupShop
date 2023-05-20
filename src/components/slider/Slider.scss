@@ -1,0 +1,131 @@
+.slider {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(84, 72, 43, 0.499);
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .slide img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .slide img {
+    height: 100%;
+  }
+  
+  .content {
+    position: absolute;
+    text-align: center;
+    top: 23rem;
+    left: 50%;
+    opacity: 0;
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+    background: rgba(69, 60, 38, 0.388);
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    //   visibility: hidden;
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      visibility: visible;
+      top: 23rem;
+    }
+    100% {
+      visibility: visible;
+      top: 17rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content {
+      width: 80%;
+    }
+  }
+  
+  .content > * {
+    color: #ffebcf;
+    margin-bottom: 1rem;
+  }
+  
+  .current {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .current .content {
+    opacity: 1;
+  }
+  .arrow {
+    border: 2px solid rgb(83, 72, 43);
+    border-radius: 50%;
+    background: transparent;
+    color: #ffebcf;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .arrow:hover {
+    background: #ffebcf;
+  }
+  
+  .next {
+    right: 1.5rem;
+    color: rgb(83, 72, 43);
+  }
+  .prev {
+    left: 1.5rem;
+    color: rgb(83, 72, 43);
+  }
+  
+  hr {
+    height: 2px;
+    background: #ffebcf;
+    width: 50%;
+  }
+  .btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 6px 8px;
+    margin: 0 5px 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+  }
